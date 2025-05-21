@@ -1,13 +1,13 @@
 # Dockerfile
+
 FROM node:18-alpine AS builder
 
 WORKDIR /app
 
 COPY . .
 
-RUN corepack enable && corepack prepare npm@latest --activate
 RUN npm install
-RUN npm build
+RUN npm run build
 
 FROM node:18-alpine AS runner
 
