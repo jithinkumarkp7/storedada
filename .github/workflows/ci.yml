@@ -18,22 +18,16 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18
-          cache: 'pnpm'
-
-      - name: Install pnpm
-        run: npm install -g pnpm
-
-      - name: Check pnpm version
-        run: pnpm -v
-
+          cache: 'npm'       
+          
       - name: Install dependencies
-        run: pnpm install
+        run: npm install
 
       - name: Lint
-        run: pnpm lint
+        run: npm run lint
 
       - name: Build project
-        run: pnpm build
+        run: npm run build
 
   docker-build:
     runs-on: ubuntu-latest
