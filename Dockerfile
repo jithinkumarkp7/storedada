@@ -5,9 +5,9 @@ WORKDIR /app
 
 COPY . .
 
-RUN corepack enable && corepack prepare pnpm@latest --activate
-RUN pnpm install
-RUN pnpm build
+RUN corepack enable && corepack prepare npm@latest --activate
+RUN npm install
+RUN npm build
 
 FROM node:18-alpine AS runner
 
@@ -18,4 +18,4 @@ COPY --from=builder /app ./
 
 EXPOSE 3000
 
-CMD ["pnpm", "start"]
+CMD ["npm", "start"]

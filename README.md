@@ -6,7 +6,7 @@ This project is a modern, production-ready Next.js application built with:
 - ✅ Tailwind CSS
 - ✅ TypeScript
 - ✅ ESLint
-- ✅ pnpm
+- ✅ npm
 - ✅ Docker support
 - ✅ GitHub Actions (CI/CD)
 - ✅ Component-based architecture
@@ -31,16 +31,16 @@ src/
 
 ### Install dependencies
 
-<pre> pnpm install</pre>
+<pre> npm install</pre>
 
 ### Run locally
 
-<pre> pnpm dev</pre>
+<pre> npm dev</pre>
 
 The app will be available at http://localhost:3000.
 
 ### Linting
-<pre> pnpm lint</pre>
+<pre> npm lint</pre>
 
 
 ### 🐳 Docker Setup
@@ -56,10 +56,10 @@ The app will be accessible at http://localhost:3000.
 
 ### 📝 Scripts
 <pre>
-pnpm dev        # Run development server
-pnpm build      # Build production app
-pnpm start      # Start production server
-pnpm lint       # Lint code
+npm dev        # Run development server
+npm build      # Build production app
+npm start      # Start production server
+npm lint       # Lint code
 </pre>
 
 
